@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body {
+  font-family: Ubuntu, sans-serif; }
+
+html, body {
+  height: 100%; }
+
+input[type="text"], input[type="password"], input[type="file"], #selection {
+  padding: 10px;
+  outline: none;
+  border-radius: 3px;
+  margin: 14px auto;
+  width: 300px;
+  display: block;
+  font-size: 16px; }
+
+input[type="submit"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  margin: 5px auto;
+  width: 300px;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  background-color: #6399B2; }
+
+input[type="submit"]:hover {
+  background-color: #8db6c9; }
+
+.wrap {
+  margin: 0 auto;
+  position: relative;
+  text-align: center; }
+
+.pull_left {
+  float: left; }
+
+.pull_rigth {
+  float: right; }
+
+.logout {
+  position: absolute;
+  display: block;
+  right: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
+  color: #2B2B2B; }
+
+.header {
+  border-bottom: 1px solid #ccc; }
+
+.default {
+  border: 1px solid #ccc; }
+
+.ok {
+  border: 1px solid #10862C; }
+
+.error {
+  border: 1px solid #C93948; }
+
+.mass {
+  position: absolute;
+  overflow: auto;
+  width: 600px;
+  height: 100px;
+  padding: 10px;
+  text-align: left; }
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; }
+
+.col {
+  flex: 1;
+  margin: 0.6em;
+  max-width: 300px;
+  max-height: 250px; }
+
+.imge {
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: cover;
+  position: relative;
+  height: 250px;
+  width: 300px; }
+
+.imge input {
+  display: block;
+  opacity: 0;
+  position: absolute; }
+
+.imge label {
+  display: block;
+  position: relative; }
+
+.imge label::after {
+  content: "";
+  display: block;
+  left: -2;
+  height: 245px;
+  position: absolute;
+  width: 295px;
+  top: -2;
+  border-radius: 5px; }
+
+.imge input:checked + label::after {
+  border: 4px solid #C93948; }
+
+.all {
+  height: 100%; }
+
+#section-one {
+  overflow: hidden;
+  position: relative; }
+
+#section-three {
+  background-color: black; }
+
+#section-four {
+  background-color: blue; }
+
+#section-five {
+  background-color: orange; }
+
+video {
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  z-index: -1; }
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5); }
+
+.text {
+  margin-top: 30vh; }
+
+.text h1 {
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 1px 1px 5px #000;
+  position: relative;
+  text-align: center;
+  font-weight: 200; }
+
+.quotes {
+  display: none;
+  color: #fff;
+  position: relative;
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 200;
+  text-align: center;
+  z-index: 2; }
+
+.descopara {
+  color: #fff;
+  padding: 20px 40px;
+  border: 3px solid #fff;
+  display: inline-block;
+  font-size: 20px;
+  margin: auto;
+  left: 50%;
+  bottom: 40px;
+  position: absolute;
+  transform: translateX(-50%); }
+
+.gradiant {
+  background-image: url("../assets/image/bg_gradiant.png");
+  position: relative;
+  height: 320px;
+  width: 100%;
+  top: 0px;
+  z-index: 4; }
+
+.background_two {
+  background-color: black; }
+
+.background_class {
+  background: url("../assets/image/filter_bg.png"); }
+
+.fixed {
+  position: fixed;
+  top: 20;
+  align-self: center; }
+
+.bal-wrap, .kozep-wrap, .jobb-wrap, .felso-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.bal, .kozep, .jobb, .felso {
+  display: flex;
+  flex-direction: column; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  align-self: center; }
+
+.background_three {
+  position: relative;
+  background-color: black;
+  height: 100%;
+  z-index: 100;
+  overflow: hidden; }
+
+.hide {
+  visibility: hidden; }
+
+.gradiant_two {
+  background-image: url("../assets/image/bg_gradiant_two.png");
+  position: relative;
+  height: 320px;
+  width: 100%;
+  top: 0px;
+  z-index: 4; }
+
+progress {
+  position: fixed;
+  left: 0;
+  top: 1;
+  width: 100%;
+  height: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  z-index: 9999; }
+
+progress::-webkit-progress-bar {
+  background-color: transparent; }
+
+progress::-webkit-progress-value {
+  background-color: #fff; }
+
+progress::-moz-progress-bar {
+  background-color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,559 @@
+@import 'color.sass'
+*
+	margin: 0
+	padding: 0
+	border: 0
+body
+	font-family: Ubuntu, sans-serif
+html, body
+	height: 100%
+
+input[type="text"] , input[type="password"] , input[type="file"], #selection
+	padding: 10px
+	outline: none
+	border-radius: 3px
+	margin: 14px auto
+	width: 300px
+	display: block
+	font-size: 16px
+
+input[type="submit"]
+	padding: 10px
+	border-radius: 5px
+	border: 0
+	margin: 5px auto
+	width: 300px
+	display: block
+	color: #fff
+	font-size: 20px
+	background-color: $buton_color
+
+input[type="submit"]:hover
+	background-color: $buton_color_hover
+.wrap
+	margin: 0 auto
+	position: relative
+	text-align: center
+
+.pull_left
+	float: left
+.pull_rigth
+	float: right  
+.logout
+	position: absolute
+	display: block
+	right: 10px
+	text-decoration: none
+	font-size: 20px
+	margin: 10px
+	color: #2B2B2B
+.header
+	border-bottom: 1px solid #ccc
+.default
+	border: 1px solid #ccc
+.ok
+	border: 1px solid #10862C
+.error 
+	border: 1px solid $error_color_red
+
+.mass
+	position: absolute
+	overflow: auto
+	width: 600px
+	height: 100px
+	padding: 10px
+	text-align: left
+
+.row 
+	display: flex
+	flex-flow: row wrap
+	align-items: center
+	justify-content: center
+
+
+
+.col 
+	flex: 1 
+	margin: .6em
+	max-width: 300px
+	max-height: 250px
+.imge
+	background-position: left bottom
+	background-repeat: no-repeat
+	display: block
+	background-size: cover
+	position: relative
+	height: 250px
+	width: 300px
+	
+.imge input 
+	display: block
+	opacity: 0
+	position: absolute
+.imge label 
+	display: block
+	position: relative
+
+.imge label::after
+	content: ""
+	display: block
+	left: -2
+	height: 245px
+	position: absolute
+	width: 295px
+	top: -2
+	border-radius: 5px
+.imge input:checked + label::after 
+	border: 4px solid $error_color_red
+.all
+	height: 100%  
+#section-one
+
+	overflow: hidden
+	position: relative
+
+#section-two
+	//
+
+#section-three
+	background-color: black
+
+#section-four
+	background-color: black
+	position: relative
+	z-index: 11
+
+#section-six
+	background-color: black
+	height: 100%
+
+#section-five
+	background-color: black
+
+
+
+
+video 
+	position: fixed
+	min-height: 100%
+	min-width: 100%
+	transform: translate(-50%, -50%)
+	top: 50%
+	left: 50%
+	width: auto
+	height: auto
+	z-index: -1
+.background
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background: rgba(0,0,0,0.5)
+.text
+	margin-top: 30vh
+
+.text h1
+	color: #fff
+	font-size: 4vw
+	text-shadow: 1px 1px  5px #000
+	position: relative
+	text-align: center
+	font-weight: 200
+
+.quotes
+	display: none
+	color: #fff
+	position: relative
+	margin-top: 10px
+	font-size: 2.5vw
+	font-weight: 200
+	text-align: center
+	z-index: 2
+
+.gradiant
+	background: linear-gradient(to bottom, transparent -95%, rgba(0, 0, 0, 1) 100%)
+	position: relative
+	height: 320px
+	width: 100%
+	top: 0px
+	z-index: 4
+.background_two
+	background-color: black
+
+.background_class
+	background: url("../assets/image/filter_bg.png")
+.fixed
+	position: fixed
+	top: 40
+	align-self: center
+.bal-wrap, .kozep-wrap, .jobb-wrap, .felso-wrap, .back-wrap
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column	
+
+.bal, .kozep, .jobb, .felso, .back
+	display: flex
+	flex-direction: column
+img
+	max-width: 100%
+	height: auto
+	align-self: center
+.background_three
+	position: relative
+	background-color: black
+	height: 75%
+	z-index: 10
+.hide	
+	visibility: hidden
+.gradiant_two
+	background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 22%, rgba(0, 0, 0, 1) 100%)
+	position: relative
+	height: 25%
+	width: 100%
+	top: 0px
+	z-index: 6
+
+progress
+	position: fixed
+	left: 0
+	top: 2
+	width: 100%
+	height: 6px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	border: none
+	background-color: transparent
+	color: #fff
+	z-index: 9999
+progress::-webkit-progress-bar 
+	background-color: transparent
+progress::-webkit-progress-value 
+	background-color: #fff
+progress::-moz-progress-bar 
+	background-color: #fff
+.back
+	z-index: 0
+.felso
+	z-index: 2
+.kozep
+	z-index: 3
+.bal
+	z-index: 4
+.jobb
+	z-index: 5
+.text-two 
+	z-index: 6
+	color: #313233
+	text-align: center
+	margin-top: -190px
+	font-size: 1.6vw
+	font-weight: 600
+
+.back img
+	border: 8px solid rgba(204,32,61,0.8)
+.fixed-top
+	position: fixed
+	top: 30
+	align-self: center
+
+.scroll a 
+	position: absolute
+	bottom: 20px
+	left: 50%
+	z-index: 2
+	display: inline-block
+	-webkit-transform: translate(0, -50%)
+	transform: translate(0, -50%)
+	color: #fff
+	font-size: 20px
+	text-decoration: none
+	transition: opacity .3s
+
+.scroll a 
+	padding-top: 60px
+
+.scroll a span 
+	position: absolute
+	top: 0
+	left: 50%
+	width: 30px
+	height: 50px
+	margin-left: -15px
+	border: 2px solid #fff
+	border-radius: 50px
+	box-sizing: border-box
+
+.scroll a span::before 
+	position: absolute
+	top: 10px
+	left: 50%
+	content: ''
+	width: 6px
+	height: 6px
+	margin-left: -3px
+	background-color: #fff
+	border-radius: 100%
+	-webkit-animation: sdb10 2s infinite
+	animation: sdb10 2s infinite
+	box-sizing: border-box
+
+@-webkit-keyframes sdb10 
+	0% 
+		-webkit-transform: translate(0, 0)
+		opacity: 0
+	
+	40% 
+		opacity: 1
+	
+	80% 
+		-webkit-transform: translate(0, 20px)
+		opacity: 0
+	100% 
+		opacity: 0
+	
+
+@keyframes sdb10 
+	0% 
+		transform: translate(0, 0)
+		opacity: 0
+	
+	40% 
+		opacity: 1
+	
+	80% 
+		transform: translate(0, 20px)
+		opacity: 0
+	
+	100% 
+		opacity: 0
+.margin
+	width: 600
+
+*:focus
+	outline: none
+
+.inputGroup
+	position: relative
+	margin-bottom: 30px
+
+	label
+		position: absolute
+		top: 0
+		left: 5px
+		pointer-events: none
+		transition: all 0.3s ease
+		font-size: 21px
+		color: white
+		font-weight: 500
+		text-transform: uppercase
+	input, textarea
+		display: block
+		width: 500px
+		border: none
+		border-bottom: 2px solid #fff
+		left: 25px
+		padding: 5px
+		background: none
+		color: #ccc
+		margin: 0
+	input
+		&:focus ~ label, &:valid ~ label
+			top: -20px
+			transition: all 0.3s ease
+			font-size: 13px
+	textarea
+		&:focus ~ label, &:valid ~ label
+			top: -20px
+			transition: all 0.3s ease
+			font-size: 13px
+	input:focus ~ .inputBar
+		&:before, &:after
+			width: 50%
+	textarea
+		&:focus ~ .inputBar
+			&:before, &:after
+				width: 50%
+		height: 100px
+		width: 500px
+		overflow: auto
+		resize: none
+		font-size: 17px
+	.inputBar
+		position: relative
+		display: block
+		width: 500px
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			bottom: 0
+			width: 0
+			background: #CC203D
+			height: 3px
+			transition: all 0.2s ease
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			bottom: 0
+			width: 0
+			background: #CC203D
+			height: 3px
+			transition: all 0.2s ease
+			right: 50%
+		&:before
+			left: 50%
+
+.button
+	border-bottom: 2px solid #fff
+	padding: 15px 0
+	color: #fff
+	margin: 0
+	width: 500px
+	text-transform: uppercase
+	position: relative
+	cursor: pointer
+	text-align: center
+	font-size: 22px
+	margin-top: -10px
+
+	&:hover
+		border-bottom: 3px solid #CC203D
+		color: #CC203D
+		transition: all 0.2s ease
+	&:active
+		border-bottom: 3px solid #CC203D
+		color: #CC203D
+		transition: all 0.2s ease
+
+.gallery
+	overflow: hidden
+	height: 100%
+	width: 100%
+	display: block
+	margin: 0
+	padding: 0
+	position: relative
+.gallery li a img
+	z-index: 9999
+.imgWrap
+	cursor: pointer
+	float: left
+	width: 20%
+	height: 100%
+	overflow: hidden
+	position: relative
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	-webkit-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	-moz-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	-o-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	&:last-child
+		float: left
+
+.current
+	width: 36%
+	-webkit-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	-moz-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	-o-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+
+.notCurrent
+	width: 16%
+	-webkit-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	-moz-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	-o-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+
+.current-full
+	width: 100%
+	-webkit-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	-moz-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	-o-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	.full-content
+		visibility: visible
+	cursor: auto
+
+.full-content
+	visibility: hidden
+	background: rgba(0, 0, 0, 0.6)
+	height: 100%
+	width: 100%
+
+.notCurrent-full
+	width: 0%
+	-webkit-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	-moz-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	-o-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+	transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+
+.images ul li
+	float: left
+	width: 150px
+	height: 125px
+	list-style: none
+	margin: 40px 40px 40px 40px
+	opacity: 1
+	box-shadow: #000 0px 0px 5px 0px
+	-webkit-animation: scale 3s ease-in-out infinite alternate
+	&:hover
+		opacity: 1.0
+
+.current-full .close
+	visibility: visible
+
+
+.my-gallery 
+	width: 100%
+	float: left
+
+.my-gallery img 
+	width: 100%
+	height: auto
+
+.my-gallery figure 
+	display: block
+	float: left
+	margin: 0 5px 5px 0
+	width: 150px
+
+.my-gallery figcaption 
+	display: none
+#map
+	width: 100%
+	height: 48%
+	overflow: visible
+	border-top: 8px solid rgba(204,32,61,0.8)
+	border-bottom: 8px solid rgba(204,32,61,0.8)
+.info, .info-jobb, .info-bal
+	color: #fff
+	width: 500px
+	h1
+		text-transform: uppercase
+		font-size: 21px
+		margin-bottom: 14px
+		font-weight: 400
+.wrap_six
+	display: flex
+	justify-content: space-around
+	align-items: center
+	height: 100%
+.wrap_four
+	display: flex
+	justify-content: space-around
+	align-items: center
+	height: 48%
+
+.line
+	width: 1px
+	height: 70%
+	border-left: 2px solid #fff
+.space
+	margin-top: 20px
+
